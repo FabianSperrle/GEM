@@ -524,6 +524,10 @@ void GEM_u8g2::menuItemSelect() {
 
 //====================== VALUE EDIT
 
+bool GEM::isEditing() {
+  return _editValueMode;
+}
+
 void GEM_u8g2::enterEditValueMode() {
   _editValueMode = true;
   
