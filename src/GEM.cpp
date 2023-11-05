@@ -444,6 +444,10 @@ void GEM::menuItemSelect() {
 
 //====================== VALUE EDIT
 
+bool GEM::isEditing() {
+  return _editValueMode;
+}
+
 void GEM::enterEditValueMode() {
   _editValueMode = true;
   
