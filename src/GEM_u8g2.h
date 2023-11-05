@@ -124,6 +124,7 @@ class GEM_u8g2 {
     void init();                                         // Init the menu (set necessary settings, display GEM splash screen, etc.)
     void reInit();                                       // Reinitialize the menu (call U8g2::initDisplay() and then reapply GEM specific settings)
     void setMenuPageCurrent(GEMPage& menuPageCurrent);   // Set supplied menu page as current
+    bool isEditing();
 
     /* CONTEXT OPERATIONS */
 
@@ -132,7 +133,7 @@ class GEM_u8g2 {
 
     /* DRAW OPERATIONS */
 
-    void drawMenu();                                     // Draw menu on screen, with menu page set earlier in GEM_u8g2::setMenuPageCurrent()
+    void drawMenu();                                    // Draw menu on screen, with menu page set earlier in GEM_u8g2::setMenuPageCurrent()
 
     /* KEY DETECTION */
 
